@@ -1,0 +1,32 @@
+{
+   "name": "robots-api",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "type": "commonjs",
+   "devDependencies": {
+      "@types/jest": "^26.0.14",
+      "@types/node": "^16.11.10",
+      "@types/superagent": "^4.1.16",
+      "@types/supertest": "^2.0.12",
+      "http-status": "^1.5.3",
+      "jest": "^25.2.2",
+      "superagent": "^8.0.6",
+      "supertest": "^6.3.3",
+      "ts-jest": "^26.4.0",
+      "ts-node": "10.7.0",
+      "typescript": "^4.5.2"
+   },
+   "dependencies": {
+      "body-parser": "^1.19.1",
+      "dotenv": "^16.0.3",
+      "express": "^4.17.2",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.3.11"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "typeorm": "typeorm-ts-node-commonjs",
+      "test": "jest NODE_ENV=test TS_NODE=true jest --runInBand --coverage --verbose"
+   }
+}
